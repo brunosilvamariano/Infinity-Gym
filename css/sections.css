@@ -1869,3 +1869,1493 @@
   }
 }
 
+
+
+
+
+
+
+
+
+/* Seção Quem Somos */
+.quem-somos {
+  background: var(--bg-secondary);
+}
+
+.quem-somos-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-text {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.about-text .lead {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-relaxed);
+  color: var(--text-secondary);
+}
+
+.personal-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-2xl);
+}
+
+.personal-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-xl);
+  padding: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all var(--transition-normal);
+  box-shadow: var(--box-shadow-sm);
+}
+
+.personal-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--box-shadow-lg);
+}
+
+.personal-image {
+  width: 150px;
+  height: 150px;
+  border-radius: var(--border-radius-full);
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: var(--spacing-lg);
+  border: 4px solid var(--accent-primary);
+  box-shadow: var(--box-shadow-md);
+}
+
+.personal-info h3 {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-primary);
+}
+
+.personal-info p {
+  font-size: var(--font-size-base);
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-md);
+}
+
+.personal-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+.personal-actions .btn {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-size: var(--font-size-sm);
+}
+
+/* Responsividade para a seção Quem Somos */
+@media (max-width: 1024px) {
+  .personal-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .personal-card {
+    padding: var(--spacing-lg);
+  }
+  .personal-image {
+    width: 120px;
+    height: 120px;
+  }
+  .personal-info h3 {
+    font-size: var(--font-size-xl);
+  }
+  .personal-info p {
+    font-size: var(--font-size-sm);
+  }
+}
+
+@media (max-width: 425px) {
+  .personal-card {
+    padding: var(--spacing-md);
+  }
+  .personal-image {
+    width: 100px;
+    height: 100px;
+  }
+  .personal-info h3 {
+    font-size: var(--font-size-lg);
+  }
+  .personal-info p {
+    font-size: var(--font-size-xs);
+  }
+}
+
+@media (max-width: 375px) {
+  .personal-card {
+    padding: var(--spacing-sm);
+  }
+  .personal-image {
+    width: 80px;
+    height: 80px;
+  }
+  .personal-info h3 {
+    font-size: var(--font-size-base);
+  }
+  .personal-info p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .personal-card {
+    padding: var(--spacing-xs);
+  }
+  .personal-image {
+    width: 70px;
+    height: 70px;
+  }
+  .personal-info h3 {
+    font-size: var(--font-size-sm);
+  }
+  .personal-info p {
+    font-size: 9px;
+  }
+}
+
+
+
+
+/* Responsividade para a seção Calculadora */
+@media (max-width: 1024px) {
+  .calculadora-content {
+    padding: 0 var(--spacing-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .personal-selection {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  .personal-avatar {
+    width: 60px;
+    height: 60px;
+    font-size: var(--font-size-xl);
+  }
+  .personal-option h4 {
+    font-size: var(--font-size-lg);
+  }
+  .result-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  .calc-form {
+    padding: var(--spacing-lg);
+  }
+  .result-card {
+    padding: var(--spacing-lg);
+  }
+  .plan-price {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+@media (max-width: 425px) {
+  .personal-avatar {
+    width: 50px;
+    height: 50px;
+    font-size: var(--font-size-lg);
+  }
+  .personal-option {
+    padding: var(--spacing-md);
+  }
+  .specialty-tag {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+  .calc-form {
+    padding: var(--spacing-md);
+  }
+  .result-card {
+    padding: var(--spacing-md);
+  }
+  .plan-recommendation h4 {
+    font-size: var(--font-size-xl);
+  }
+  .plan-price {
+    font-size: var(--font-size-xl);
+  }
+}
+
+@media (max-width: 375px) {
+  .calculadora-content,
+  .faq-content {
+    padding: 0 var(--spacing-sm);
+  }
+  .plan-benefits li {
+    font-size: var(--font-size-sm);
+  }
+}
+
+@media (max-width: 320px) {
+  .calc-form,
+  .result-card {
+    padding: var(--spacing-sm);
+  }
+  .plan-recommendation h4 {
+    font-size: var(--font-size-lg);
+  }
+  .plan-price {
+    font-size: var(--font-size-lg);
+  }
+  .plan-benefits li {
+    font-size: var(--font-size-xs);
+  }
+}
+
+
+
+
+/* Responsividade para a seção Calculadora */
+@media (max-width: 1024px) {
+  .calculadora-content {
+    padding: 0 var(--spacing-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .personal-selection {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  .personal-avatar {
+    width: 60px;
+    height: 60px;
+    font-size: var(--font-size-xl);
+  }
+  .personal-option h4 {
+    font-size: var(--font-size-lg);
+  }
+  .result-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  .calc-form {
+    padding: var(--spacing-lg);
+  }
+  .result-card {
+    padding: var(--spacing-lg);
+  }
+  .plan-price {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+@media (max-width: 425px) {
+  .personal-avatar {
+    width: 50px;
+    height: 50px;
+    font-size: var(--font-size-lg);
+  }
+  .personal-option {
+    padding: var(--spacing-md);
+  }
+  .specialty-tag {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+  .calc-form {
+    padding: var(--spacing-md);
+  }
+  .result-card {
+    padding: var(--spacing-md);
+  }
+  .plan-recommendation h4 {
+    font-size: var(--font-size-xl);
+  }
+  .plan-price {
+    font-size: var(--font-size-xl);
+  }
+}
+
+@media (max-width: 375px) {
+  .calculadora-content,
+  .faq-content {
+    padding: 0 var(--spacing-sm);
+  }
+  .plan-benefits li {
+    font-size: var(--font-size-sm);
+  }
+}
+
+@media (max-width: 320px) {
+  .calc-form,
+  .result-card {
+    padding: var(--spacing-sm);
+  }
+  .plan-recommendation h4 {
+    font-size: var(--font-size-lg);
+  }
+  .plan-price {
+    font-size: var(--font-size-lg);
+  }
+  .plan-benefits li {
+    font-size: var(--font-size-xs);
+  }
+}
+
+/* Responsividade para FAQ */
+@media (max-width: 768px) {
+  .faq-question {
+    padding: var(--spacing-md);
+  }
+  
+  .faq-question h3 {
+    font-size: var(--font-size-base);
+  }
+  
+  .faq-answer p {
+    padding: var(--spacing-md);
+  }
+}
+
+@media (max-width: 425px) {
+  .faq-question {
+    padding: var(--spacing-sm);
+  }
+  
+  .faq-question h3 {
+    font-size: var(--font-size-sm);
+  }
+  
+  .faq-answer p {
+    padding: var(--spacing-sm);
+    font-size: var(--font-size-sm);
+  }
+}
+
+@media (max-width: 375px) {
+  .faq-question h3 {
+    font-size: var(--font-size-xs);
+  }
+}
+
+@media (max-width: 320px) {
+  .faq-question h3 {
+    font-size: var(--font-size-xs);
+  }
+}
+
+
+
+
+/* Responsividade para a seção Calculadora */
+@media (max-width: 1024px) {
+  .calculadora-content {
+    padding: 0 var(--spacing-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .personal-selection {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  .personal-avatar {
+    width: 60px;
+    height: 60px;
+    font-size: var(--font-size-xl);
+  }
+  .personal-option h4 {
+    font-size: var(--font-size-lg);
+  }
+  .result-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  .calc-form {
+    padding: var(--spacing-lg);
+  }
+  .result-card {
+    padding: var(--spacing-lg);
+  }
+  .plan-price {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+@media (max-width: 425px) {
+  .personal-avatar {
+    width: 50px;
+    height: 50px;
+    font-size: var(--font-size-lg);
+  }
+  .personal-option {
+    padding: var(--spacing-md);
+  }
+  .specialty-tag {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+  .calc-form {
+    padding: var(--spacing-md);
+  }
+  .result-card {
+    padding: var(--spacing-md);
+  }
+  .plan-recommendation h4 {
+    font-size: var(--font-size-xl);
+  }
+  .plan-price {
+    font-size: var(--font-size-xl);
+  }
+}
+
+@media (max-width: 375px) {
+  .calculadora-content,
+  .faq-content {
+    padding: 0 var(--spacing-sm);
+  }
+  .plan-benefits li {
+    font-size: var(--font-size-sm);
+  }
+}
+
+@media (max-width: 320px) {
+  .calc-form,
+  .result-card {
+    padding: var(--spacing-sm);
+  }
+  .plan-recommendation h4 {
+    font-size: var(--font-size-lg);
+  }
+  .plan-price {
+    font-size: var(--font-size-lg);
+  }
+  .plan-benefits li {
+    font-size: var(--font-size-xs);
+  }
+}
+
+/* Responsividade para FAQ */
+@media (max-width: 768px) {
+  .faq-question {
+    padding: var(--spacing-md);
+  }
+  
+  .faq-question h3 {
+    font-size: var(--font-size-base);
+  }
+  
+  .faq-answer p {
+    padding: var(--spacing-md);
+  }
+}
+
+@media (max-width: 425px) {
+  .faq-question {
+    padding: var(--spacing-sm);
+  }
+  
+  .faq-question h3 {
+    font-size: var(--font-size-sm);
+  }
+  
+  .faq-answer p {
+    padding: var(--spacing-sm);
+    font-size: var(--font-size-sm);
+  }
+}
+
+@media (max-width: 375px) {
+  .faq-question h3 {
+    font-size: var(--font-size-xs);
+  }
+}
+
+@media (max-width: 320px) {
+  .faq-question h3 {
+    font-size: var(--font-size-xs);
+  }
+}
+
+
+
+/* Melhorias de responsividade para Hero Section */
+@media (max-width: 1024px) {
+  .hero {
+    min-height: 95vh;
+  }
+  
+  .hero-content {
+    padding: var(--spacing-lg) 0;
+  }
+  
+  .hero-title {
+    font-size: var(--font-size-5xl);
+  }
+  
+  .hero-subtitle {
+    font-size: var(--font-size-lg);
+  }
+  
+  .hero-badge {
+    font-size: var(--font-size-xs);
+    padding: var(--spacing-xs) var(--spacing-md);
+  }
+  
+  .stat-number {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .stat-label {
+    font-size: var(--font-size-xs);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 85vh;
+  }
+  
+  .hero-title {
+    font-size: var(--font-size-4xl);
+  }
+  
+  .hero-subtitle {
+    font-size: var(--font-size-base);
+  }
+  
+  .hero-actions {
+    gap: var(--spacing-sm);
+  }
+  
+  .hero-stats {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  
+  .stat-number {
+    font-size: var(--font-size-xl);
+  }
+}
+
+@media (max-width: 425px) {
+  .hero {
+    min-height: 80vh;
+  }
+  
+  .hero-title {
+    font-size: var(--font-size-3xl);
+  }
+  
+  .hero-subtitle {
+    font-size: var(--font-size-sm);
+  }
+  
+  .hero-badge {
+    font-size: 10px;
+    padding: 6px var(--spacing-sm);
+  }
+  
+  .hero-actions .btn {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .stat-number {
+    font-size: var(--font-size-lg);
+  }
+  
+  .stat-label {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero {
+    min-height: 75vh;
+  }
+  
+  .hero-content {
+    padding: var(--spacing-sm) 0;
+  }
+  
+  .hero-title {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .hero-subtitle {
+    font-size: var(--font-size-xs);
+  }
+  
+  .hero-badge {
+    font-size: 9px;
+    padding: 4px var(--spacing-xs);
+  }
+  
+  .stat-number {
+    font-size: var(--font-size-base);
+  }
+  
+  .stat-label {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero {
+    min-height: 70vh;
+  }
+  
+  .hero-title {
+    font-size: var(--font-size-xl);
+  }
+  
+  .hero-subtitle {
+    font-size: 12px;
+  }
+  
+  .hero-badge {
+    font-size: 8px;
+    padding: 3px 8px;
+  }
+  
+  .stat-number {
+    font-size: var(--font-size-sm);
+  }
+  
+  .stat-label {
+    font-size: 8px;
+  }
+}
+
+/* Melhorias de responsividade para Seções Gerais */
+@media (max-width: 1024px) {
+  .section {
+    padding: var(--spacing-2xl) 0;
+  }
+  
+  .section-title {
+    font-size: var(--font-size-3xl);
+  }
+  
+  .section-title::after {
+    width: 50px;
+    height: 3px;
+  }
+  
+  .section-subtitle {
+    font-size: var(--font-size-base);
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .section-header {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .section-title {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .section-title::after {
+    width: 40px;
+    height: 3px;
+  }
+  
+  .section-subtitle {
+    font-size: var(--font-size-sm);
+  }
+}
+
+@media (max-width: 425px) {
+  .section {
+    padding: var(--spacing-lg) 0;
+  }
+  
+  .section-header {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .section-title {
+    font-size: var(--font-size-xl);
+  }
+  
+  .section-title::after {
+    width: 30px;
+    height: 2px;
+  }
+  
+  .section-subtitle {
+    font-size: var(--font-size-xs);
+  }
+}
+
+@media (max-width: 375px) {
+  .section {
+    padding: var(--spacing-md) 0;
+  }
+  
+  .section-title {
+    font-size: var(--font-size-lg);
+  }
+  
+  .section-title::after {
+    width: 25px;
+    height: 2px;
+  }
+  
+  .section-subtitle {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .section {
+    padding: var(--spacing-sm) 0;
+  }
+  
+  .section-title {
+    font-size: var(--font-size-base);
+  }
+  
+  .section-title::after {
+    width: 20px;
+    height: 1px;
+  }
+  
+  .section-subtitle {
+    font-size: 11px;
+  }
+}
+
+/* Melhorias de responsividade para Seção Quem Somos */
+@media (max-width: 1024px) {
+  .about-text .lead {
+    font-size: var(--font-size-lg);
+  }
+  
+  .personal-cards {
+    gap: var(--spacing-xl);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-text .lead {
+    font-size: var(--font-size-base);
+  }
+  
+  .personal-cards {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .personal-card {
+    padding: var(--spacing-lg);
+  }
+  
+  .personal-image {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .personal-info h3 {
+    font-size: var(--font-size-xl);
+  }
+  
+  .personal-info p {
+    font-size: var(--font-size-sm);
+  }
+}
+
+@media (max-width: 425px) {
+  .about-text .lead {
+    font-size: var(--font-size-sm);
+  }
+  
+  .personal-card {
+    padding: var(--spacing-md);
+  }
+  
+  .personal-image {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .personal-info h3 {
+    font-size: var(--font-size-lg);
+  }
+  
+  .personal-info p {
+    font-size: var(--font-size-xs);
+  }
+  
+  .personal-actions {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+  
+  .personal-actions .btn {
+    font-size: var(--font-size-xs);
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+}
+
+@media (max-width: 375px) {
+  .about-text .lead {
+    font-size: var(--font-size-xs);
+  }
+  
+  .personal-card {
+    padding: var(--spacing-sm);
+  }
+  
+  .personal-image {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .personal-info h3 {
+    font-size: var(--font-size-base);
+  }
+  
+  .personal-info p {
+    font-size: 12px;
+  }
+  
+  .personal-actions .btn {
+    font-size: 11px;
+    padding: 6px var(--spacing-xs);
+  }
+}
+
+@media (max-width: 320px) {
+  .about-text .lead {
+    font-size: 12px;
+  }
+  
+  .personal-card {
+    padding: var(--spacing-xs);
+  }
+  
+  .personal-image {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .personal-info h3 {
+    font-size: var(--font-size-sm);
+  }
+  
+  .personal-info p {
+    font-size: 11px;
+  }
+  
+  .personal-actions .btn {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+}
+
+/* Melhorias de responsividade para Seção Contato */
+@media (max-width: 1024px) {
+  .contato-content {
+    gap: var(--spacing-xl);
+  }
+  
+  .contato-info {
+    gap: var(--spacing-lg);
+  }
+  
+  .info-item {
+    padding: var(--spacing-lg);
+  }
+  
+  .info-icon {
+    width: 55px;
+    height: 55px;
+    font-size: var(--font-size-lg);
+  }
+  
+  .info-content h3 {
+    font-size: var(--font-size-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .contato-info {
+    gap: var(--spacing-md);
+  }
+  
+  .info-item {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+  }
+  
+  .info-icon {
+    width: 50px;
+    height: 50px;
+    font-size: var(--font-size-base);
+  }
+  
+  .info-content h3 {
+    font-size: var(--font-size-base);
+  }
+  
+  .info-content p {
+    font-size: var(--font-size-sm);
+  }
+  
+  .social-section {
+    padding: var(--spacing-md);
+  }
+  
+  .social-section h3 {
+    font-size: var(--font-size-xl);
+  }
+}
+
+@media (max-width: 425px) {
+  .info-item {
+    padding: var(--spacing-sm);
+  }
+  
+  .info-icon {
+    width: 45px;
+    height: 45px;
+    font-size: var(--font-size-sm);
+  }
+  
+  .info-content h3 {
+    font-size: var(--font-size-sm);
+  }
+  
+  .info-content p {
+    font-size: var(--font-size-xs);
+  }
+  
+  .social-section {
+    padding: var(--spacing-sm);
+  }
+  
+  .social-section h3 {
+    font-size: var(--font-size-lg);
+  }
+}
+
+@media (max-width: 375px) {
+  .info-item {
+    padding: var(--spacing-xs);
+  }
+  
+  .info-icon {
+    width: 40px;
+    height: 40px;
+    font-size: var(--font-size-xs);
+  }
+  
+  .info-content h3 {
+    font-size: var(--font-size-xs);
+  }
+  
+  .info-content p {
+    font-size: 12px;
+  }
+  
+  .social-section h3 {
+    font-size: var(--font-size-base);
+  }
+}
+
+@media (max-width: 320px) {
+  .info-item {
+    padding: 8px;
+  }
+  
+  .info-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 12px;
+  }
+  
+  .info-content h3 {
+    font-size: 12px;
+  }
+  
+  .info-content p {
+    font-size: 11px;
+  }
+  
+  .social-section h3 {
+    font-size: var(--font-size-sm);
+  }
+}
+
+/* Melhorias de responsividade para Footer */
+@media (max-width: 1024px) {
+  .footer {
+    padding: var(--spacing-2xl) 0 var(--spacing-md);
+  }
+  
+  .footer-content {
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+  }
+  
+  .footer-brand h3 {
+    font-size: var(--font-size-xl);
+  }
+  
+  .footer-links h4,
+  .footer-contact h4,
+  .footer-social h4 {
+    font-size: var(--font-size-base);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: var(--spacing-xl) 0 var(--spacing-sm);
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    text-align: center;
+  }
+  
+  .footer-brand h3 {
+    font-size: var(--font-size-lg);
+  }
+  
+  .footer-brand p {
+    font-size: var(--font-size-sm);
+  }
+  
+  .footer-links h4,
+  .footer-contact h4,
+  .footer-social h4 {
+    font-size: var(--font-size-sm);
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    text-align: center;
+    font-size: var(--font-size-xs);
+  }
+}
+
+@media (max-width: 425px) {
+  .footer {
+    padding: var(--spacing-lg) 0 var(--spacing-xs);
+  }
+  
+  .footer-brand h3 {
+    font-size: var(--font-size-base);
+  }
+  
+  .footer-brand p {
+    font-size: var(--font-size-xs);
+  }
+  
+  .footer-links h4,
+  .footer-contact h4,
+  .footer-social h4 {
+    font-size: var(--font-size-xs);
+  }
+  
+  .footer-links a {
+    font-size: var(--font-size-xs);
+  }
+  
+  .footer-contact p {
+    font-size: var(--font-size-xs);
+  }
+  
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer-brand h3 {
+    font-size: var(--font-size-sm);
+  }
+  
+  .footer-brand p {
+    font-size: 12px;
+  }
+  
+  .footer-links h4,
+  .footer-contact h4,
+  .footer-social h4 {
+    font-size: 12px;
+  }
+  
+  .footer-links a {
+    font-size: 12px;
+  }
+  
+  .footer-contact p {
+    font-size: 12px;
+  }
+  
+  .footer-bottom {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer-brand h3 {
+    font-size: var(--font-size-xs);
+  }
+  
+  .footer-brand p {
+    font-size: 11px;
+  }
+  
+  .footer-links h4,
+  .footer-contact h4,
+  .footer-social h4 {
+    font-size: 11px;
+  }
+  
+  .footer-links a {
+    font-size: 11px;
+  }
+  
+  .footer-contact p {
+    font-size: 11px;
+  }
+  
+  .footer-bottom {
+    font-size: 10px;
+  }
+}
+
+/* Melhorias de responsividade para Calculadora Section */
+@media (max-width: 1024px) {
+  .calculadora-content {
+    padding: 0 var(--spacing-md);
+  }
+  
+  .calc-form {
+    padding: var(--spacing-xl);
+  }
+  
+  .form-group label {
+    font-size: var(--font-size-base);
+  }
+  
+  .personal-avatar {
+    width: 70px;
+    height: 70px;
+    font-size: var(--font-size-xl);
+  }
+  
+  .personal-option h4 {
+    font-size: var(--font-size-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .personal-selection {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+  
+  .calc-form {
+    padding: var(--spacing-lg);
+  }
+  
+  .result-card {
+    padding: var(--spacing-lg);
+  }
+  
+  .personal-avatar {
+    width: 60px;
+    height: 60px;
+    font-size: var(--font-size-lg);
+  }
+  
+  .personal-option {
+    padding: var(--spacing-md);
+  }
+  
+  .personal-option h4 {
+    font-size: var(--font-size-base);
+  }
+  
+  .personal-option p {
+    font-size: var(--font-size-xs);
+  }
+  
+  .specialty-tag {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+  
+  .plan-price {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .result-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .calc-form {
+    padding: var(--spacing-md);
+  }
+  
+  .result-card {
+    padding: var(--spacing-md);
+  }
+  
+  .personal-avatar {
+    width: 50px;
+    height: 50px;
+    font-size: var(--font-size-base);
+  }
+  
+  .personal-option {
+    padding: var(--spacing-sm);
+  }
+  
+  .personal-option h4 {
+    font-size: var(--font-size-sm);
+  }
+  
+  .personal-option p {
+    font-size: 12px;
+  }
+  
+  .specialty-tag {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+  
+  .plan-recommendation h4 {
+    font-size: var(--font-size-xl);
+  }
+  
+  .plan-price {
+    font-size: var(--font-size-xl);
+  }
+  
+  .plan-benefits li {
+    font-size: var(--font-size-xs);
+  }
+}
+
+@media (max-width: 375px) {
+  .calc-form {
+    padding: var(--spacing-sm);
+  }
+  
+  .result-card {
+    padding: var(--spacing-sm);
+  }
+  
+  .personal-avatar {
+    width: 45px;
+    height: 45px;
+    font-size: var(--font-size-sm);
+  }
+  
+  .personal-option h4 {
+    font-size: var(--font-size-xs);
+  }
+  
+  .personal-option p {
+    font-size: 11px;
+  }
+  
+  .specialty-tag {
+    font-size: 9px;
+    padding: 2px 5px;
+  }
+  
+  .plan-benefits li {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .calc-form {
+    padding: var(--spacing-xs);
+  }
+  
+  .result-card {
+    padding: var(--spacing-xs);
+  }
+  
+  .personal-avatar {
+    width: 40px;
+    height: 40px;
+    font-size: var(--font-size-xs);
+  }
+  
+  .personal-option h4 {
+    font-size: 12px;
+  }
+  
+  .personal-option p {
+    font-size: 10px;
+  }
+  
+  .specialty-tag {
+    font-size: 8px;
+    padding: 2px 4px;
+  }
+  
+  .plan-recommendation h4 {
+    font-size: var(--font-size-lg);
+  }
+  
+  .plan-price {
+    font-size: var(--font-size-lg);
+  }
+  
+  .plan-benefits li {
+    font-size: 11px;
+  }
+}
+
+/* Melhorias de responsividade para FAQ Section */
+@media (max-width: 1024px) {
+  .faq-content {
+    padding: 0 var(--spacing-md);
+  }
+  
+  .faq-question {
+    padding: var(--spacing-lg);
+  }
+  
+  .faq-icon {
+    width: 45px;
+    height: 45px;
+    font-size: var(--font-size-base);
+  }
+  
+  .faq-question h3 {
+    font-size: var(--font-size-base);
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-question {
+    padding: var(--spacing-md);
+  }
+  
+  .faq-question-content {
+    gap: var(--spacing-sm);
+  }
+  
+  .faq-icon {
+    width: 40px;
+    height: 40px;
+    font-size: var(--font-size-sm);
+  }
+  
+  .faq-question h3 {
+    font-size: var(--font-size-sm);
+  }
+  
+  .faq-answer p {
+    padding: var(--spacing-md);
+    font-size: var(--font-size-sm);
+  }
+}
+
+@media (max-width: 425px) {
+  .faq-question {
+    padding: var(--spacing-sm);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+  }
+  
+  .faq-question-content {
+    gap: var(--spacing-xs);
+  }
+  
+  .faq-icon {
+    width: 35px;
+    height: 35px;
+    font-size: var(--font-size-xs);
+  }
+  
+  .faq-question h3 {
+    font-size: var(--font-size-xs);
+  }
+  
+  .faq-toggle {
+    align-self: flex-end;
+    margin-left: 0;
+  }
+  
+  .faq-answer p {
+    padding: var(--spacing-sm);
+    font-size: var(--font-size-xs);
+  }
+}
+
+@media (max-width: 375px) {
+  .faq-question {
+    padding: var(--spacing-xs);
+  }
+  
+  .faq-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+  
+  .faq-question h3 {
+    font-size: 12px;
+  }
+  
+  .faq-answer p {
+    padding: var(--spacing-xs);
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .faq-question {
+    padding: 8px;
+  }
+  
+  .faq-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 11px;
+  }
+  
+  .faq-question h3 {
+    font-size: 11px;
+  }
+  
+  .faq-answer p {
+    padding: 8px;
+    font-size: 11px;
+  }
+}
+

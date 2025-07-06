@@ -971,3 +971,802 @@
   }
 }
 
+
+/* Melhorias de responsividade para Header e Navegação */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: var(--spacing-md) 0;
+    min-height: 75px;
+  }
+  
+  .logo {
+    height: 45px;
+  }
+  
+  .brand-text {
+    font-size: var(--font-size-lg);
+  }
+  
+  .nav-link {
+    font-size: var(--font-size-base);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: var(--spacing-sm) 0;
+    min-height: 65px;
+  }
+  
+  .navbar-menu {
+    top: 65px;
+  }
+  
+  .logo {
+    height: 38px;
+  }
+  
+  .brand-text {
+    font-size: var(--font-size-base);
+  }
+  
+  .nav-link {
+    font-size: var(--font-size-sm);
+    padding: var(--spacing-sm) 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .navbar {
+    min-height: 55px;
+    padding: var(--spacing-xs) 0;
+  }
+  
+  .navbar-menu {
+    top: 55px;
+    padding: var(--spacing-sm);
+  }
+  
+  .logo {
+    height: 32px;
+  }
+  
+  .brand-text {
+    font-size: var(--font-size-sm);
+  }
+  
+  .theme-toggle {
+    width: 38px;
+    height: 38px;
+  }
+  
+  .mobile-menu-toggle span {
+    width: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar {
+    min-height: 50px;
+  }
+  
+  .navbar-menu {
+    top: 50px;
+  }
+  
+  .logo {
+    height: 28px;
+  }
+  
+  .brand-text {
+    font-size: var(--font-size-xs);
+  }
+  
+  .theme-toggle {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .mobile-menu-toggle span {
+    width: 18px;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar {
+    min-height: 45px;
+  }
+  
+  .navbar-menu {
+    top: 45px;
+  }
+  
+  .logo {
+    height: 25px;
+  }
+  
+  .brand-text {
+    font-size: 12px;
+  }
+  
+  .theme-toggle {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .mobile-menu-toggle span {
+    width: 16px;
+  }
+}
+
+/* Melhorias de responsividade para Cards de Diferenciais */
+@media (max-width: 1024px) {
+  .diferencial-card {
+    padding: var(--spacing-lg);
+  }
+  
+  .card-icon {
+    width: 70px;
+    height: 70px;
+    font-size: var(--font-size-xl);
+  }
+  
+  .diferencial-card h3 {
+    font-size: var(--font-size-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .diferencial-card {
+    padding: var(--spacing-md);
+  }
+  
+  .card-icon {
+    width: 60px;
+    height: 60px;
+    font-size: var(--font-size-lg);
+  }
+  
+  .diferencial-card h3 {
+    font-size: var(--font-size-base);
+  }
+  
+  .diferencial-card p {
+    font-size: var(--font-size-sm);
+  }
+}
+
+@media (max-width: 425px) {
+  .diferencial-card {
+    padding: var(--spacing-sm);
+  }
+  
+  .card-icon {
+    width: 50px;
+    height: 50px;
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .diferencial-card h3 {
+    font-size: var(--font-size-sm);
+  }
+  
+  .diferencial-card p {
+    font-size: var(--font-size-xs);
+  }
+}
+
+@media (max-width: 375px) {
+  .diferencial-card {
+    padding: var(--spacing-xs);
+  }
+  
+  .card-icon {
+    width: 45px;
+    height: 45px;
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .diferencial-card h3 {
+    font-size: var(--font-size-xs);
+  }
+  
+  .diferencial-card p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .diferencial-card {
+    padding: 8px;
+  }
+  
+  .card-icon {
+    width: 40px;
+    height: 40px;
+    font-size: var(--font-size-xs);
+    margin-bottom: 8px;
+  }
+  
+  .diferencial-card h3 {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  
+  .diferencial-card p {
+    font-size: 11px;
+  }
+}
+
+/* Melhorias de responsividade para Cards de Planos */
+@media (max-width: 1024px) {
+  .plano-card {
+    padding: var(--spacing-lg);
+  }
+  
+  .plano-header h3 {
+    font-size: var(--font-size-xl);
+  }
+  
+  .amount {
+    font-size: var(--font-size-4xl);
+  }
+}
+
+@media (max-width: 768px) {
+  .plano-card {
+    padding: var(--spacing-md);
+  }
+  
+  .plano-header h3 {
+    font-size: var(--font-size-lg);
+  }
+  
+  .amount {
+    font-size: var(--font-size-3xl);
+  }
+  
+  .currency,
+  .period {
+    font-size: var(--font-size-base);
+  }
+  
+  .feature span {
+    font-size: var(--font-size-xs);
+  }
+}
+
+@media (max-width: 425px) {
+  .plano-card {
+    padding: var(--spacing-sm);
+  }
+  
+  .plano-header h3 {
+    font-size: var(--font-size-base);
+  }
+  
+  .amount {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .currency,
+  .period {
+    font-size: var(--font-size-sm);
+  }
+  
+  .feature {
+    padding: var(--spacing-xs) 0;
+  }
+  
+  .feature span {
+    font-size: 12px;
+  }
+  
+  .plano-badge {
+    font-size: var(--font-size-xs);
+    padding: 4px var(--spacing-sm);
+  }
+}
+
+@media (max-width: 375px) {
+  .plano-card {
+    padding: var(--spacing-xs);
+  }
+  
+  .plano-header h3 {
+    font-size: var(--font-size-sm);
+  }
+  
+  .amount {
+    font-size: var(--font-size-xl);
+  }
+  
+  .currency,
+  .period {
+    font-size: var(--font-size-xs);
+  }
+  
+  .feature span {
+    font-size: 11px;
+  }
+  
+  .plano-badge {
+    font-size: 10px;
+    padding: 3px var(--spacing-xs);
+  }
+}
+
+@media (max-width: 320px) {
+  .plano-card {
+    padding: 8px;
+  }
+  
+  .plano-header h3 {
+    font-size: 12px;
+  }
+  
+  .amount {
+    font-size: var(--font-size-lg);
+  }
+  
+  .currency,
+  .period {
+    font-size: 10px;
+  }
+  
+  .feature span {
+    font-size: 10px;
+  }
+  
+  .plano-badge {
+    font-size: 9px;
+    padding: 2px 8px;
+  }
+}
+
+/* Melhorias de responsividade para Cards de Modalidades */
+@media (max-width: 1024px) {
+  .modalidade-card {
+    padding: var(--spacing-lg);
+  }
+  
+  .modalidade-card .card-icon {
+    width: 70px;
+    height: 70px;
+    font-size: var(--font-size-xl);
+  }
+  
+  .modalidade-card h3 {
+    font-size: var(--font-size-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .modalidade-card {
+    padding: var(--spacing-md);
+  }
+  
+  .modalidade-card .card-icon {
+    width: 60px;
+    height: 60px;
+    font-size: var(--font-size-lg);
+  }
+  
+  .modalidade-card h3 {
+    font-size: var(--font-size-base);
+  }
+  
+  .modalidade-card p {
+    font-size: var(--font-size-sm);
+  }
+}
+
+@media (max-width: 425px) {
+  .modalidade-card {
+    padding: var(--spacing-sm);
+  }
+  
+  .modalidade-card .card-icon {
+    width: 50px;
+    height: 50px;
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .modalidade-card h3 {
+    font-size: var(--font-size-sm);
+  }
+  
+  .modalidade-card p {
+    font-size: var(--font-size-xs);
+  }
+}
+
+@media (max-width: 375px) {
+  .modalidade-card {
+    padding: var(--spacing-xs);
+  }
+  
+  .modalidade-card .card-icon {
+    width: 45px;
+    height: 45px;
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .modalidade-card h3 {
+    font-size: var(--font-size-xs);
+  }
+  
+  .modalidade-card p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .modalidade-card {
+    padding: 8px;
+  }
+  
+  .modalidade-card .card-icon {
+    width: 40px;
+    height: 40px;
+    font-size: var(--font-size-xs);
+    margin-bottom: 8px;
+  }
+  
+  .modalidade-card h3 {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  
+  .modalidade-card p {
+    font-size: 11px;
+  }
+}
+
+/* Melhorias de responsividade para Cards de Personal */
+@media (max-width: 1024px) {
+  .personal-image {
+    height: 280px;
+  }
+  
+  .personal-info {
+    padding: var(--spacing-lg);
+  }
+  
+  .personal-info h3 {
+    font-size: var(--font-size-xl);
+  }
+}
+
+@media (max-width: 768px) {
+  .personal-image {
+    height: 250px;
+  }
+  
+  .personal-info {
+    padding: var(--spacing-md);
+  }
+  
+  .personal-info h3 {
+    font-size: var(--font-size-lg);
+  }
+  
+  .personal-info p {
+    font-size: var(--font-size-sm);
+  }
+  
+  .personal-role {
+    font-size: var(--font-size-xs);
+  }
+}
+
+@media (max-width: 425px) {
+  .personal-image {
+    height: 200px;
+  }
+  
+  .personal-info {
+    padding: var(--spacing-sm);
+  }
+  
+  .personal-info h3 {
+    font-size: var(--font-size-base);
+  }
+  
+  .personal-info p {
+    font-size: var(--font-size-xs);
+  }
+  
+  .personal-role {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .personal-image {
+    height: 180px;
+  }
+  
+  .personal-info {
+    padding: var(--spacing-xs);
+  }
+  
+  .personal-info h3 {
+    font-size: var(--font-size-sm);
+  }
+  
+  .personal-info p {
+    font-size: 12px;
+  }
+  
+  .personal-role {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 320px) {
+  .personal-image {
+    height: 160px;
+  }
+  
+  .personal-info {
+    padding: 8px;
+  }
+  
+  .personal-info h3 {
+    font-size: 12px;
+  }
+  
+  .personal-info p {
+    font-size: 11px;
+  }
+  
+  .personal-role {
+    font-size: 8px;
+  }
+}
+
+/* Melhorias de responsividade para Cards de Produtos */
+@media (max-width: 1024px) {
+  .produto-image {
+    height: 230px;
+  }
+  
+  .produto-info {
+    padding: var(--spacing-lg);
+  }
+  
+  .produto-info h3 {
+    font-size: var(--font-size-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .produto-image {
+    height: 200px;
+  }
+  
+  .produto-info {
+    padding: var(--spacing-md);
+  }
+  
+  .produto-info h3 {
+    font-size: var(--font-size-base);
+  }
+  
+  .produto-info p {
+    font-size: var(--font-size-sm);
+  }
+  
+  .produto-price {
+    font-size: var(--font-size-base);
+  }
+}
+
+@media (max-width: 425px) {
+  .produto-image {
+    height: 180px;
+  }
+  
+  .produto-info {
+    padding: var(--spacing-sm);
+  }
+  
+  .produto-info h3 {
+    font-size: var(--font-size-sm);
+  }
+  
+  .produto-info p {
+    font-size: var(--font-size-xs);
+  }
+  
+  .produto-price {
+    font-size: var(--font-size-sm);
+  }
+}
+
+@media (max-width: 375px) {
+  .produto-image {
+    height: 160px;
+  }
+  
+  .produto-info {
+    padding: var(--spacing-xs);
+  }
+  
+  .produto-info h3 {
+    font-size: var(--font-size-xs);
+  }
+  
+  .produto-info p {
+    font-size: 12px;
+  }
+  
+  .produto-price {
+    font-size: var(--font-size-xs);
+  }
+}
+
+@media (max-width: 320px) {
+  .produto-image {
+    height: 140px;
+  }
+  
+  .produto-info {
+    padding: 8px;
+  }
+  
+  .produto-info h3 {
+    font-size: 12px;
+  }
+  
+  .produto-info p {
+    font-size: 11px;
+  }
+  
+  .produto-price {
+    font-size: 12px;
+  }
+}
+
+/* Melhorias de responsividade para Fixed Elements */
+@media (max-width: 1024px) {
+  .fixed-elements {
+    bottom: var(--spacing-md);
+    right: var(--spacing-md);
+  }
+  
+  .whatsapp-float {
+    width: 55px;
+    height: 55px;
+    font-size: var(--font-size-xl);
+  }
+  
+  .back-to-top {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fixed-elements {
+    bottom: var(--spacing-sm);
+    right: var(--spacing-sm);
+    left: var(--spacing-sm);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    font-size: var(--font-size-lg);
+  }
+  
+  .back-to-top {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 425px) {
+  .fixed-elements {
+    bottom: var(--spacing-xs);
+    right: var(--spacing-xs);
+    left: var(--spacing-xs);
+  }
+  
+  .whatsapp-float {
+    width: 45px;
+    height: 45px;
+    font-size: var(--font-size-base);
+  }
+  
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: var(--font-size-sm);
+  }
+}
+
+@media (max-width: 375px) {
+  .whatsapp-float {
+    width: 42px;
+    height: 42px;
+    font-size: var(--font-size-sm);
+  }
+  
+  .back-to-top {
+    width: 38px;
+    height: 38px;
+    font-size: var(--font-size-xs);
+  }
+}
+
+@media (max-width: 320px) {
+  .whatsapp-float {
+    width: 38px;
+    height: 38px;
+    font-size: var(--font-size-xs);
+  }
+  
+  .back-to-top {
+    width: 35px;
+    height: 35px;
+    font-size: 10px;
+  }
+}
+
+/* Melhorias de responsividade para Links Sociais */
+@media (max-width: 1024px) {
+  .social-link {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-sm);
+  }
+}
+
+@media (max-width: 768px) {
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-xs);
+  }
+  
+  .social-link {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-size-xs);
+  }
+}
+
+@media (max-width: 425px) {
+  .social-link {
+    max-width: 250px;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  .social-link {
+    max-width: 220px;
+    padding: 6px var(--spacing-xs);
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 320px) {
+  .social-link {
+    max-width: 200px;
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+}
+
